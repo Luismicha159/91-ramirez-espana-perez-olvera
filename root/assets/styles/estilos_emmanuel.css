@@ -14,6 +14,7 @@ section>main{
 }
 section>aside{
     grid-column: span 4;
+    background-color: brown;
 }
 section>footer{
     grid-column: span 12;
@@ -21,12 +22,14 @@ section>footer{
 
 body{
     background-color: black;color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 article{
     background-color: rgb(44, 43, 43); 
     padding: 1.5rem;
     border-bottom: 1px solid;color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .resaltado{
@@ -53,10 +56,20 @@ article{
     margin: 2rem;
 }
 
+.Barra_nav{
+    background-color: brown;
+    padding: 1.5rem;
+}
+
 nav>ul>li {
     list-style: none;
 }
 
 nav>ul>li>a {
     text-decoration: none;
+}
+
+ol>li>a{
+    text-decoration: none;
+    
 }
