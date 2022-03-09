@@ -21,6 +21,7 @@ section>aside{
 section>footer{
     grid-column: span 12;
 }
+/*Final de Grid*/
 
 body{
     background-color: black;color: white;
