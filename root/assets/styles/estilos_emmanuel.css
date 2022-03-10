@@ -15,8 +15,8 @@ section>main{
 section>aside{
     grid-column: span 4;
     background-color: brown;
-    padding: 1.5rem;
-    margin-top: -3rem;
+    /*padding: 1.5rem;
+    margin-top: -3rem;*/
 }
 section>footer{
     grid-column: span 12;
@@ -35,10 +35,6 @@ article{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.resaltado{
-    color: yellow;
-}
-
 .titulo_del_blog{
     text-align: center;
     font-size: 3rem;
@@ -55,13 +51,30 @@ article{
     font-style: italic;
 }
 
+/*Footer*/
+
 .footer_blog{
     margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 0rem; 
+    padding-right:  0rem;
+    font-size: 1.3rem;
 }
 
-.Barra_nav{
+.footer_blog div:nth-child(2){
+    font-size: 0.9rem;
+}
+
+/*Navegación*/
+
+nav{
     background-color: brown;
-    padding: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.3rem;
 }
 
 nav>ul>li {
@@ -70,9 +83,72 @@ nav>ul>li {
 
 nav>ul>li>a {
     text-decoration: none;
+    color: white;
 }
 
 ol>li>a{
     text-decoration: none;
     
+}
+
+nav>ul>li>a:hover{
+    text-decoration: underline;
+    color: greenyellow;
+}
+
+.resaltado{
+    color: yellow;
+}
+
+nav>ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid; color:white;
+    padding-bottom: 0.5rem;
+}
+
+/*Articles*/
+
+article>header>hgroup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Titulo*/
+article>header>hgroup>h2{
+    display: flex;
+    align: center;
+}
+
+article>header>hgroup>h2>img{
+    margin: 1rem;
+}
+
+/*Microblog*/
+aside>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+aside>h2{
+    display: flex;
+    align: center;
+    font-size: 1.3rem;
+}
+aside>div:nth-child(even){
+    background-color: rgb(44, 43, 43);
+}
+
+aside>div>img{
+    display: flex;
+    background-color: white;
+    padding: 0.5;
+    border-radius: 50%;
 }
