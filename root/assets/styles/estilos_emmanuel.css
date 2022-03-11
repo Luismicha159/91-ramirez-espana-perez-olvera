@@ -42,13 +42,18 @@ article{
 
 .ilustracion{
     border: 4px solid; color: white;
-    display: inline;
+    display: inline-block;
 }
 
 .ilustracion figcaption{
     margin-top: 1rem;
     margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
     font-style: italic;
+    text-align: center;
+    background-color: brown;
 }
 
 /*Footer*/
