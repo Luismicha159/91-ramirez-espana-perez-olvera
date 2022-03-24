@@ -35,7 +35,7 @@ article{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.titulo_del_blog{
+#titulo_del_blog{
     text-align: center;
     font-size: 3rem;
 }
@@ -125,7 +125,8 @@ article>header>hgroup{
 /*Titulo*/
 article>header>hgroup>h2{
     display: flex;
-    align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 article>header>hgroup>h2>img{
