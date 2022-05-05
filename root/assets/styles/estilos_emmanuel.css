@@ -6,17 +6,23 @@ section{
     gap:3rem;
 }
 
-section>header{
-    grid-column: span 12;
+@media(min-width:1024.1px){
+    section>header{
+        grid-column: span 12;
+    }
 }
-section>main{
-    grid-column: span 8;
-}
-section>aside{
-    grid-column: span 4;
-    background-color: brown;
-    /*padding: 1.5rem;
-    margin-top: -3rem;*/
+@media(min-width:1024.1px){
+    section>main{
+        grid-column: span 8;
+    }
+} 
+@media(min-width:1024.1px){
+    section>aside{
+        grid-column: span 4;
+        background-color: brown;
+        /*padding: 1.5rem;
+        margin-top: -3rem;*/
+    }
 }
 section>footer{
     grid-column: span 12;
@@ -39,7 +45,7 @@ article{
 #titulo_del_blog{
     padding-top: 6rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: clamp()
 }
 
 .ilustracion{
@@ -157,6 +163,12 @@ aside>div{
     padding-top: 1.5rem;
 }
 
+@media(min-width:1024.1) and (max-width:1324.1){
+    aside>div{
+        flex-direction: column;
+    }
+}
+
 aside>h2{
     display: flex;
     align: center;
@@ -184,12 +196,28 @@ aside>div>img{
 }
 
 /*Mobil*/
+@media (max-width:1024px){
+    nav>ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        gap: 1rem;
+        border-bottom: 1px solid white;
+        padding-bottom: 1.5rem;
+    }
 
-nav>ul{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
-    gap: 1rem;
-    border-bottom: 1px solid white;
-    padding-bottom: 1.5rem;
+    section>header{
+        grid-column: span 12;
+    }
+
+    section>main{
+        grid-column: span 12;
+    }
+
+    section>aside{
+        grid-column: span 12;
+        background-color: brown;
+        /*padding: 1.5rem;
+        margin-top: -3rem;*/
+    }
 }
