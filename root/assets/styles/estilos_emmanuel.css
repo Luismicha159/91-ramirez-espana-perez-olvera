@@ -45,7 +45,7 @@ article{
 #titulo_del_blog{
     padding-top: 6rem;
     text-align: center;
-    font-size: clamp()
+    font-size: clamp(2rem, calc(1% + 2rem), 7rem)
 }
 
 .ilustracion{
@@ -80,6 +80,10 @@ article{
 
 .footer_blog div:nth-child(2){
     font-size: 0.9rem;
+}
+
+.footer_blog>span{
+    padding: 0.5rem;
 }
 
 /*Navegación*/
